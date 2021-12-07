@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./icons/nigalogo.svg" rel="shortcut icon" type="image/x-icon" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Anastsia Shkyrta</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg fixed-top" id="navbar">
+        <div class="container-fluid">
+          <a class="navbar-brand ms-5" href="#"
+            ><img
+              src="./icons/logo.svg"
+              style="width: 70px; height: 70px"
+              alt="logo"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarTogglerDemo02"
+            aria-controls="navbarTogglerDemo02"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span
+              class="navbar-toggler"
+              style="color: black; z-index: 2"
+            ></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav mb-lg-0 ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#">ALL COLLECTIONS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">FOR HIM</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">FOR HER</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">ABOUT US</a>
+              </li>
+            </ul>
+            <ul class="navbar-nav mb-lg-0 ms-auto me-5">
+              <li class="nav-item">
+                <a class="nav-link" href="#"
+                  ><img
+                    src="./icons/search.svg"
+                    style="width: 18px; height: 18px"
+                    alt="logo"
+                /></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"
+                  ><img
+                    src="./icons/shop.svg"
+                    style="width: 22px; height: 22px"
+                    alt="logo"
+                /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="container-fluid main_gallery d-flex p-0">
+        <div class="slide" style="background-image: url('./img/g1.jpg')">
+          <h3>01</h3>
+          <h4>All that glitters...</h4>
+          <p>
+            Whether your preferred sparkle is gold or silver, get party ready
+            this festive season with jewellery. It's time to treat yourself.
+          </p>
+        </div>
+        <div class="slide" style="background-image: url('./img/g2.jpg')">
+          <h3>02</h3>
+          <h4>The Season For Stacking</h4>
+          <p>
+            From the perfect simple stacking bands to chunky pieces that are
+            sure to make a statement, add some shine to your day .
+          </p>
+        </div>
+        <div class="slide" style="background-image: url('./img/g3.jpg')">
+          <h3>03</h3>
+          <h4>We can't live without</h4>
+          <p>
+            Every jewellery collection needs its' staple pieces - pieces that
+            you can't help but keep going back to. That's where we come in.
+          </p>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="container-fluid popular_goods">
+        <div class="ellips"></div>
+        <div class="d-flex flex-row justify-content-between">
+          <h4 class="best_seller ms-5 mt-5">BEST SELLER</h4>
+          <a href="#" class="mt-5 me-5 alt"
+            >All<img
+              class="ms-3"
+              src="./icons/Larrow.svg"
+              style="width: 50px; height: 50px; transform: rotate(180deg)"
+              alt="arrow"
+          /></a>
+        </div>
+        <!-- Carousel -->
+        <div
+          id="carouselExampleIndicators"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-indicators m-0 mb-3">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="0"
+              class="active indicator"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              class="indicator"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              class="indicator"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row d-flex justify-content-around mt-5">
+                <a class="card col-4 d-block" href="#">
+                  <div
+                    class="pic"
+                    style="background-image: url(./img/BoldHoops.jpg)"
+                  ></div>
+                  <div class="card-body d-flex p-0 pb-4">
+                    <h5 class="card-title mb-0 me-5">Bold Hoops</h5>
+                    <p class="price m-0 pt-3">$160</p>
+
+                    <img
+                      class="ms-auto mt-3"
+                      src="./icons/Larrow.svg"
+                      style="
+                        width: 30px;
+                        height: 30px;
+                        transform: rotate(180deg);
+                      "
+                      alt="arrow"
+                    />
+                  </div>
+                </a>
+                <a class="card col-4 d-block" href="#">
+                  <div
+                    class="pic"
+                    style="background-image: url(./img/DailyMiniHoops.jpg)"
+                  ></div>
+                  <div class="card-body d-flex p-0 pb-4">
+                    <h5 class="card-title mb-0 me-5">Mini Hoops</h5>
+                    <p class="price m-0 pt-3">$135</p>
+
+                    <img
+                      class="ms-auto mt-3"
+                      src="./icons/Larrow.svg"
+                      style="
+                        width: 30px;
+                        height: 30px;
+                        transform: rotate(180deg);
+                      "
+                      alt="arrow"
+                    />
+                  </div>
+                </a>
+                <a class="card col-4 d-block" href="#">
+                  <div
+                    class="pic"
+                    style="background-image: url(./img/BostonDomeHoops.jpg)"
+                  ></div>
+                  <div class="card-body d-flex p-0 pb-4">
+                    <h5 class="card-title mb-0 me-5">Dome Hoops</h5>
+                    <p class="price m-0 pt-3">$120</p>
+
+                    <img
+                      class="ms-auto mt-3"
+                      src="./icons/Larrow.svg"
+                      style="
+                        width: 30px;
+                        height: 30px;
+                        transform: rotate(180deg);
+                      "
+                      alt="arrow"
+                    />
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="row d-flex justify-content-around mt-5 pt-5">
+                <a class="card col-4 d-block" href="#">
+                  <div
+                    class="pic"
+                    style="background-image: url(./img/DiamondNecklace.jpg)"
+                  ></div>
+                  <div class="card-body d-flex p-0 pb-4">
+                    <h5 class="card-title mb-0 me-5">Shine Necklace</h5>
+                    <p class="price m-0 pt-3">$310</p>
+
+                    <img
+                      class="ms-auto mt-3"
+                      src="./icons/Larrow.svg"
+                      style="
+                        width: 30px;
+                        height: 30px;
+                        transform: rotate(180deg);
+                      "
+                      alt="arrow"
+                    />
+                  </div>
+                </a>
+                <a class="card col-4 d-block" href="#">
+                  <div
+                    class="pic"
+                    style="background-image: url(./img/LineNecklace.jpg)"
+                  ></div>
+                  <div class="card-body d-flex p-0 pb-4">
+                    <h5 class="card-title mb-0 me-5">Line Necklace</h5>
+                    <p class="price m-0 pt-3">$360</p>
+
+                    <img
+                      class="ms-auto mt-3"
+                      src="./icons/Larrow.svg"
+                      style="
+                        width: 30px;
+                        height: 30px;
+                        transform: rotate(180deg);
+                      "
+                      alt="arrow"
+                    />
+                  </div>
+                </a>
+                <a class="card col-4 d-block" href="#">
+                  <div
+                    class="pic"
+                    style="background-image: url(./img/AquamarineNecklace.jpg)"
+                  ></div>
+                  <div class="card-body d-flex p-0 pb-4">
+                    <h5 class="card-title mb-0 me-5">Aqua Necklace</h5>
+                    <p class="price m-0 pt-3">$340</p>
+
+                    <img
+                      class="ms-auto mt-3"
+                      src="./icons/Larrow.svg"
+                      style="
+                        width: 30px;
+                        height: 30px;
+                        transform: rotate(180deg);
+                      "
+                      alt="arrow"
+                    />
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="row d-flex justify-content-around mt-5 pt-5">
+                <a class="card col-4 d-block" href="#">
+                  <div
+                    class="pic"
+                    style="background-image: url(./img/CharlotteRing.jpg)"
+                  ></div>
+                  <div class="card-body d-flex p-0 pb-4">
+                    <h5 class="card-title mb-0 me-5">Charlotte Ring</h5>
+                    <p class="price m-0 pt-3">$210</p>
+
+                    <img
+                      class="ms-auto mt-3"
+                      src="./icons/Larrow.svg"
+                      style="
+                        width: 30px;
+                        height: 30px;
+                        transform: rotate(180deg);
+                      "
+                      alt="arrow"
+                    />
+                  </div>
+                </a>
+                <a class="card col-4 d-block" href="#">
+                  <div
+                    class="pic"
+                    style="background-image: url(./img/CroissantRing.jpg)"
+                  ></div>
+                  <div class="card-body d-flex p-0 pb-4">
+                    <h5 class="card-title mb-0 me-5">Croissant Ring</h5>
+                    <p class="price m-0 pt-3">$230</p>
+
+                    <img
+                      class="ms-auto mt-3"
+                      src="./icons/Larrow.svg"
+                      style="
+                        width: 30px;
+                        height: 30px;
+                        transform: rotate(180deg);
+                      "
+                      alt="arrow"
+                    />
+                  </div>
+                </a>
+                <a class="card col-4 d-block" href="#">
+                  <div
+                    class="pic"
+                    style="background-image: url(./img/TripleLineRing.jpg)"
+                  ></div>
+                  <div class="card-body d-flex p-0 pb-4">
+                    <h5 class="card-title mb-0 me-5">Triple Ring</h5>
+                    <p class="price m-0 pt-3">$250</p>
+
+                    <img
+                      class="ms-auto mt-3"
+                      src="./icons/Larrow.svg"
+                      style="
+                        width: 30px;
+                        height: 30px;
+                        transform: rotate(180deg);
+                      "
+                      alt="arrow"
+                    />
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- bg block -->
+    <div
+      class="
+        bg_content
+        container-fluid
+        d-flex
+        justify-content-center
+        align-items-center
+      "
+    >
+      <div class="elements">
+        <h3>Introducing the Shore collection</h3>
+        <p>
+          Shop the newest additions to the Matthew Calvin family. Catching the
+          light beautifully from all angles, the Shore collection is the perfect
+          gift for under the tree.
+        </p>
+
+        <button class="btn costume_btn shadow-none m-auto d-block">
+          EXPLORE THE RANGE
+        </button>
+      </div>
+    </div>
+
+    <!-- "About us" block-->
+
+    <div class="about_block container-fluid d-flex justify-content-between">
+      <div class="ellips mt-5"></div>
+      <div class="main_content row">
+        <div class="col-6 d-flex align-items-center">
+          <div class="text_block m-auto">
+            <h4>ABOUT US</h4>
+            <p>
+              Based in London’s jewellery district Hatton Garden, Matthew Calvin
+              showcases a curated selection of minimalist, fine and demi-fine
+              jewellery. Named by The Independent as “one of the best online
+              jewellery shops”, Matthew Calvin’s signature style celebrates
+              simplicity and precision.
+            </p>
+            <p>
+              Matthew began designing jewellery in 2012, taking classes around
+              Europe where he learnt a variety of different techniques and
+              practices. The real breakthroughs came at home in Matthew’s East
+              London studio, where the brand Matthew Calvin started to take
+              form.
+            </p>
+            <p>
+              Creating jewellery for family, friends and husband Joseph, Matthew
+              perfected his craft, experimenting with tools, materials and
+              finishes. In 2015 he then set to work designing the first ranges,
+              and the brand was born.
+            </p>
+            <p>
+              The brand has since grown and is now stocked in over 100
+              independent boutiques and department stores worldwide, Matthew
+              Calvin has become synonymous for contemporary and minimal
+              jewellery design.
+            </p>
+          </div>
+        </div>
+        <div class="col-6 d-flex align-items-center">
+          <img src="./img/author.jfif" alt="pic" class="picture m-auto" />
+        </div>
+      </div>
+    </div>
+
+    <div class="men_collection container-fluid">
+      <div class="row">
+        <div class="col-6"></div>
+        <div class="col-6"></div>
+      </div>
+      <div class="row">
+        <div class="col-12"></div>
+      </div>
+    </div>
+
+    <!-- JS bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Own JS -->
+    <script src="main.js"></script>
+  </body>
+</html>
+
+<!-- <div class="arrows_block">
+    <button
+      class="carousel-control-prev"
+      type="button"
+      data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="prev"
+    >
+      <div class="arrow left">
+        <img
+          src="./icons/Larrow.svg"
+          style="width: 60px; height: 60px"
+          alt="arrow"
+        />
+      </div>
+    </button>
+    <button
+      class="carousel-control-next"
+      type="button"
+      data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="next"
+    >
+      <div class="arrow right">
+        <img
+          src="./icons/Larrow.svg"
+          style="width: 60px; height: 60px; transform: rotate(180deg)"
+          alt="arrow"
+        />
+      </div>
+    </button>
+  </div> -->

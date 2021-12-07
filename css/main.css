@@ -1,0 +1,201 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap");
+html {
+  scroll-behavior: smooth; }
+
+::-webkit-scrollbar {
+  width: 7px;
+  background-color: white; }
+
+::-webkit-scrollbar-thumb {
+  border-radius: 7px;
+  background-color: #f3e3d3; }
+
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color: #f9f9fd; }
+
+body {
+  font-family: 'Playfair Display', serif; }
+
+nav {
+  border-bottom: 1px solid white;
+  z-index: 2;
+  background-color: rgba(255, 255, 255, 0.281); }
+  nav .navbar-brand {
+    z-index: 2; }
+  nav .nav-item {
+    padding: 15px; }
+    nav .nav-item .nav-link {
+      color: white;
+      font-size: 12pt; }
+      nav .nav-item .nav-link:hover {
+        color: white; }
+
+header {
+  height: 100vh;
+  overflow: hidden; }
+  header .slide {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    cursor: pointer;
+    color: white;
+    flex: 1;
+    border-right: 1px solid white;
+    border-left: 1px solid white;
+    position: relative;
+    transition: all 500ms ease-out;
+    filter: grayscale(100%); }
+    header .slide:hover {
+      filter: grayscale(90%); }
+    header .slide h3 {
+      position: absolute;
+      font-size: 55pt;
+      font-weight: 400;
+      bottom: 350px;
+      left: 100px;
+      padding: 15px 10px;
+      opacity: 0;
+      border: 1px solid white; }
+    header .slide h4 {
+      width: 600px;
+      position: absolute;
+      text-align: end;
+      font-size: 40pt;
+      font-weight: 500;
+      bottom: 350px;
+      right: 50px;
+      opacity: 0; }
+    header .slide p {
+      width: 500px;
+      position: absolute;
+      font-size: 20pt;
+      font-weight: 600;
+      bottom: 100px;
+      right: 50px;
+      text-align: end;
+      opacity: 0; }
+    header .slide.active {
+      filter: none;
+      flex: 3; }
+      header .slide.active h3,
+      header .slide.active h4,
+      header .slide.active p {
+        opacity: 1;
+        transition: opacity 0.3s easy-in 0.4s; }
+
+.popular_goods {
+  background-color: #f3e3d3;
+  min-height: 85vh;
+  position: relative; }
+  .popular_goods .ellips {
+    position: absolute;
+    top: 180px;
+    left: 160px;
+    width: 667px;
+    height: 253px;
+    border: 2px solid white;
+    border-radius: 70%;
+    transform: rotate(-49.5deg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; }
+  .popular_goods .best_seller {
+    color: white;
+    font-size: 40pt; }
+  .popular_goods .alt {
+    text-decoration: none;
+    font-size: 27pt;
+    color: white; }
+  .popular_goods .carousel {
+    min-height: 85vh;
+    position: relative;
+    background: transparent; }
+    .popular_goods .carousel .indicator {
+      width: 15px;
+      height: 15px;
+      margin: 10px 30px;
+      border-radius: 50%; }
+
+.card {
+  width: 300px;
+  border-radius: 0;
+  background-color: transparent;
+  text-decoration: none;
+  border: none;
+  border-bottom: 2px solid white; }
+  .card .pic {
+    width: 287px;
+    height: 377px;
+    overflow: hidden;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; }
+  .card .card-body h5 {
+    color: white;
+    font-size: 15pt;
+    padding-top: 20px; }
+  .card .card-body .price {
+    color: white;
+    font-size: 15pt; }
+
+.costume_btn {
+  width: 400px;
+  height: 60px;
+  border-radius: 0;
+  border: 2px solid white;
+  color: white;
+  background-color: rgba(255, 255, 255, 0.281);
+  font-weight: 700;
+  font-size: 20pt;
+  transition: all 0.5s; }
+  .costume_btn:hover {
+    color: white;
+    border: none;
+    background-color: #ddb7ab;
+    transition: all 0.5s; }
+
+.bg_content {
+  min-height: 400px;
+  background-image: url("../img/bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .bg_content .elements h3 {
+    text-align: start;
+    color: white;
+    font-size: 45px; }
+  .bg_content .elements p {
+    margin: 40px 0 40px 300px;
+    text-align: start;
+    width: 700px;
+    color: white;
+    font-size: 25px; }
+
+.about_block {
+  min-height: 100vh;
+  position: relative; }
+  .about_block .text_block {
+    width: 80%;
+    z-index: 2; }
+    .about_block .text_block h4 {
+      border-bottom: 2px solid rgba(0, 0, 0, 0.5);
+      padding-bottom: 15px;
+      color: #1d1b1bbe;
+      font-size: 45px; }
+    .about_block .text_block p {
+      margin-top: 20px;
+      font-size: 18px; }
+  .about_block .picture {
+    width: 571px;
+    height: 571px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 2; }
+
+.men_collection {
+  min-height: 100vh; }
+
+/*# sourceMappingURL=main.css.map */
