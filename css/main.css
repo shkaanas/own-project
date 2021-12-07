@@ -190,12 +190,14 @@ header {
   .about_block .picture {
     width: 571px;
     height: 571px;
+    border-start-start-radius: 40%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     z-index: 2; }
 
 .men_collection {
-  min-height: 100vh; }
+  min-height: 100vh;
+  background-color: #f3e3d3; }
 
 /*# sourceMappingURL=main.css.map */

@@ -271,6 +271,7 @@ header {
   .picture {
     width: 571px;
     height: 571px;
+    border-start-start-radius: 40%;
     @include bg;
     z-index: 2;
   }
