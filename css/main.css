@@ -109,7 +109,7 @@ header {
     font-size: 27pt;
     color: white; }
   .popular_goods .carousel {
-    min-height: 85vh;
+    min-height: 87vh;
     position: relative;
     background: transparent; }
     .popular_goods .carousel .indicator {
@@ -159,6 +159,7 @@ header {
 .bg_content {
   min-height: 400px;
   background-image: url("../img/bg.jpg");
+  background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover; }
@@ -175,29 +176,51 @@ header {
 
 .about_block {
   min-height: 100vh;
-  position: relative; }
-  .about_block .text_block {
-    width: 80%;
-    z-index: 2; }
-    .about_block .text_block h4 {
-      border-bottom: 2px solid rgba(0, 0, 0, 0.5);
-      padding-bottom: 15px;
-      color: #1d1b1bbe;
-      font-size: 45px; }
-    .about_block .text_block p {
-      margin-top: 20px;
-      font-size: 18px; }
+  position: relative;
+  background-color: #f3e3d3; }
+  .about_block .main_content {
+    border-bottom: 2px solid white; }
+  .about_block .text_block h4 {
+    border-bottom: 2px solid white;
+    padding-bottom: 15px;
+    color: white;
+    font-size: 33pt; }
+  .about_block .text_block p {
+    color: white;
+    font-weight: 500;
+    margin-top: 20px;
+    font-size: 14pt; }
   .about_block .picture {
     width: 571px;
     height: 571px;
     border-start-start-radius: 40%;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
-    z-index: 2; }
+    background-size: cover; }
 
 .men_collection {
   min-height: 100vh;
   background-color: #f3e3d3; }
+  .men_collection .text_part {
+    max-width: 630px;
+    height: 300px;
+    color: white; }
+    .men_collection .text_part h3 {
+      font-size: 47pt;
+      cursor: default; }
+    .men_collection .text_part a {
+      font-size: 18pt;
+      color: white;
+      margin: 0;
+      padding: 0;
+      transition: all 0.5s; }
+      .men_collection .text_part a:hover {
+        border-bottom: 1.5px solid white;
+        margin-bottom: -0.5px;
+        transition: all 0.5s; }
+    .men_collection .text_part p {
+      margin: 20px 0;
+      font-size: 17pt;
+      cursor: default; }
 
 /*# sourceMappingURL=main.css.map */

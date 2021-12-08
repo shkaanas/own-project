@@ -157,7 +157,7 @@ header {
   }
 
   .carousel {
-    min-height: 85vh;
+    min-height: 87vh;
     position: relative;
     background: transparent;
 
@@ -175,7 +175,7 @@ header {
     // }
   }
 }
-
+//cards styles
 .card {
   width: 300px;
   border-radius: 0;
@@ -228,6 +228,8 @@ header {
 .bg_content {
   min-height: 400px;
   background-image: url('../img/bg.jpg');
+  background-attachment: fixed;
+
   @include bg;
 
   .elements {
@@ -250,22 +252,24 @@ header {
 .about_block {
   min-height: 100vh;
   position: relative;
+  background-color: #f3e3d3;
 
-  // .ellips {
-  //   @include ellips($base_background_color, 430px);
-  // }
+  .main_content {
+    border-bottom: 2px solid $default_background_color;
+  }
+
   .text_block {
-    width: 80%;
-    z-index: 2;
     h4 {
-      border-bottom: 2px solid $base_background_color;
+      border-bottom: 2px solid $default_background_color;
       padding-bottom: 15px;
-      color: #1d1b1bbe;
-      font-size: 45px;
+      color: $default_background_color;
+      font-size: 33pt;
     }
     p {
+      color: $default_background_color;
+      font-weight: 500;
       margin-top: 20px;
-      font-size: 18px;
+      font-size: 14pt;
     }
   }
   .picture {
@@ -273,7 +277,6 @@ header {
     height: 571px;
     border-start-start-radius: 40%;
     @include bg;
-    z-index: 2;
   }
 }
 
@@ -281,4 +284,33 @@ header {
 .men_collection {
   min-height: 100vh;
   background-color: $additional_c;
+
+  .text_part {
+    max-width: 630px;
+    height: 300px;
+    color: $default_background_color;
+
+    h3 {
+      font-size: 47pt;
+      cursor: default;
+    }
+    a {
+      font-size: 18pt;
+      color: $default_background_color;
+      margin: 0;
+      padding: 0;
+      transition: all 0.5s;
+
+      &:hover {
+        border-bottom: 1.5px solid $default_background_color;
+        margin-bottom: -0.5px;
+        transition: all 0.5s;
+      }
+    }
+    p {
+      margin: 20px 0;
+      font-size: 17pt;
+      cursor: default;
+    }
+  }
 }
