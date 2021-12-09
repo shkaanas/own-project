@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Marck+Script&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
 
 $default_background_color: white;
 $base_background_color: rgba(0, 0, 0, 0.5);
@@ -54,6 +54,7 @@ nav {
   border-bottom: 1px solid $default_background_color;
   z-index: 2;
   background-color: rgba(255, 255, 255, 0.281);
+  font-weight: 800;
 
   .navbar-brand {
     z-index: 2;
@@ -61,7 +62,7 @@ nav {
   .nav-item {
     padding: 15px;
     .nav-link {
-      color: $default_background_color;
+      color: $default_background_color !important;
       font-size: 12pt;
       &:hover {
         color: $default_background_color;
@@ -167,12 +168,6 @@ header {
       margin: 10px 30px;
       border-radius: 50%;
     }
-    // .arrows_block {
-    //   position: absolute;
-    //   left: 0;
-    //   right: 0;
-    //   bottom: 30px;
-    // }
   }
 }
 //cards styles
@@ -311,6 +306,127 @@ header {
       margin: 20px 0;
       font-size: 17pt;
       cursor: default;
+    }
+  }
+}
+
+// bg 2 block
+.bg_content_2 {
+  min-height: 400px;
+  background-image: url('../img/bg2.jpg');
+  @include bg;
+
+  .elements {
+    h3 {
+      text-align: start;
+      color: $default_background_color;
+      font-size: 44pt;
+    }
+
+    ::placeholder {
+      color: #00000081;
+      font-size: 18pt;
+    }
+    input {
+      margin: 45px 0;
+      padding: 0 20px;
+      width: 600px;
+      height: 50px;
+      background-color: rgba(255, 255, 255, 0.37);
+      color: #00000081;
+      font-size: 18pt;
+      border: 2px solid #f2f2f2;
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+}
+
+//Footer
+footer {
+  overflow: hidden;
+  .ellips {
+    position: absolute;
+    top: 300px;
+    left: 330px;
+    width: 387px;
+    height: 153px;
+    border: 2px solid $default_background_color;
+    border-radius: 70%;
+    transform: rotate(-50deg);
+    @include bg;
+  }
+}
+.footer {
+  min-height: 400px;
+
+  .company_name {
+    position: relative;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    h3 {
+      width: 100%;
+      color: $default_background_color;
+      font-family: 'Marck Script', cursive;
+      font-size: 30pt;
+      padding-bottom: 15px;
+      border-bottom: 2px solid $default_background_color;
+    }
+  }
+
+  .text {
+    color: $default_background_color;
+    text-align: center;
+    h4 {
+      font-size: 17pt;
+      padding-bottom: 8px;
+    }
+    span {
+      margin: 5px 0;
+      font-size: 13pt;
+    }
+  }
+
+  .elements {
+    h3 {
+      width: 300px;
+      text-align: start;
+      color: $default_background_color;
+      font-size: 20pt;
+    }
+
+    ::placeholder {
+      color: $default_background_color;
+      font-size: 15pt;
+    }
+    input {
+      margin: 45px 0;
+      padding: 0 20px;
+      width: 300px;
+      height: 40px;
+      color: $default_background_color;
+      font-size: 15pt;
+      border: none;
+      background-color: transparent;
+      border-bottom: 2px solid $default_background_color;
+      outline: none;
+
+      &:focus {
+        outline: none;
+      }
+    }
+
+    .btn {
+      width: 300px;
+      background-color: $bg_color;
+      color: $default_background_color;
+      font-size: 15pt;
+      border-radius: 0;
+      &:hover {
+        background-color: #d1a699;
+      }
     }
   }
 }
