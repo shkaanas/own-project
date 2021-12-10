@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Marck+Script&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap");
+html {
+  scroll-behavior: smooth; }
+
+::-webkit-scrollbar {
+  width: 7px;
+  background-color: white; }
+
+::-webkit-scrollbar-thumb {
+  border-radius: 7px;
+  background-color: #f3e3d3; }
+
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color: #f9f9fd; }
+
+body {
+  font-family: 'Playfair Display', serif; }
+
+nav {
+  border-bottom: 1px solid white;
+  z-index: 2;
+  background-color: #ddb7abc7;
+  font-weight: 700; }
+  nav .navbar-brand {
+    z-index: 2; }
+  nav .nav-item {
+    padding: 15px; }
+    nav .nav-item .nav-link {
+      color: white !important;
+      font-size: 12pt; }
+      nav .nav-item .nav-link:hover {
+        color: white; }
+
+header .front_page {
+  min-height: 100vh;
+  padding: 20px;
+  background-color: aquamarine; }
+header ul {
+  list-style: none; }
+  header ul img {
+    width: 40px;
+    height: 40px; }
+header .photo {
+  margin: 10px;
+  width: 400px;
+  height: 400px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+header .description {
+  text-align: center;
+  justify-content: center;
+  align-content: center; }
+  header .description hr {
+    background-color: #ddb7ab; }
+  header .description .txt {
+    margin: 0 auto; }
+    header .description .txt h2 {
+      color: azure; }
+
+/*# sourceMappingURL=hero_css.css.map */

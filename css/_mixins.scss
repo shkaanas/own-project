@@ -1,0 +1,17 @@
+@mixin bg {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@mixin ellips($color, $left) {
+  position: absolute;
+  top: 180px;
+  left: $left;
+  width: 667px;
+  height: 253px;
+  border: 2px solid $color;
+  border-radius: 70%;
+  transform: rotate(-49.5deg);
+  @include bg;
+}

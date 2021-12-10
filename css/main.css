@@ -177,20 +177,23 @@ header {
 
 .about_block {
   min-height: 100vh;
-  position: relative;
   background-color: #f3e3d3; }
   .about_block .main_content {
-    border-bottom: 2px solid white; }
-  .about_block .text_block h4 {
     border-bottom: 2px solid white;
-    padding-bottom: 15px;
-    color: white;
-    font-size: 33pt; }
-  .about_block .text_block p {
-    color: white;
-    font-weight: 500;
-    margin-top: 20px;
-    font-size: 14pt; }
+    background-color: green; }
+  .about_block .text_block {
+    max-width: 800px;
+    padding: 50px; }
+    .about_block .text_block h4 {
+      border-bottom: 2px solid white;
+      padding-bottom: 15px;
+      color: white;
+      font-size: 33pt; }
+    .about_block .text_block p {
+      color: white;
+      font-weight: 500;
+      margin-top: 20px;
+      font-size: 14pt; }
   .about_block .picture {
     width: 571px;
     height: 571px;
@@ -280,7 +283,8 @@ footer {
       border-bottom: 2px solid white; }
   .footer .text {
     color: white;
-    text-align: center; }
+    text-align: center;
+    cursor: default; }
     .footer .text h4 {
       font-size: 17pt;
       padding-bottom: 8px; }
