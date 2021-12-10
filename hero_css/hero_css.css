@@ -35,8 +35,7 @@ nav {
 header .front_page {
   min-height: 100vh;
   padding: 20px; }
-header .photo,
-header video {
+header .photo {
   margin: 10px;
   width: 350px;
   height: 350px;
