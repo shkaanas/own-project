@@ -34,29 +34,81 @@ nav {
 
 header .front_page {
   min-height: 100vh;
-  padding: 20px;
-  background-color: aquamarine; }
-header ul {
-  list-style: none; }
-  header ul img {
-    width: 40px;
-    height: 40px; }
+  padding: 20px; }
 header .photo {
   margin: 10px;
-  width: 400px;
-  height: 400px;
+  width: 350px;
+  height: 350px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover; }
-header .description {
+header hr {
+  height: 5px;
+  background-color: #ddb7ab; }
+header .txt {
   text-align: center;
   justify-content: center;
-  align-content: center; }
-  header .description hr {
-    background-color: #ddb7ab; }
-  header .description .txt {
-    margin: 0 auto; }
-    header .description .txt h2 {
-      color: azure; }
+  align-content: center;
+  margin: 0 auto;
+  cursor: default; }
+  header .txt h2 {
+    font-size: 24pt;
+    margin: 50px 0;
+    margin-bottom: 15px;
+    color: rgba(0, 0, 0, 0.5); }
+  header .txt .stars {
+    margin: 0 auto;
+    margin-bottom: 45px;
+    justify-content: center; }
+    header .txt .stars .star {
+      margin: 0 10px;
+      width: 16px;
+      height: 16px;
+      background-image: url("../icons/star.png"); }
+  header .txt h3 {
+    margin-left: 25px;
+    margin-top: 50px;
+    font-size: 13pt;
+    text-align: start; }
+  header .txt .alt {
+    text-align: center; }
+  header .txt p {
+    margin-left: 25px;
+    margin-bottom: 50px;
+    font-size: 10pt;
+    text-align: start; }
+  header .txt .sizes {
+    margin: 30px auto;
+    margin-left: 10px; }
+    header .txt .sizes a {
+      font-size: 15pt;
+      text-decoration: none;
+      padding: 5px 15px;
+      margin: 5px;
+      color: rgba(0, 0, 0, 0.5); }
+      header .txt .sizes a:hover {
+        border: 1px solid rgba(0, 0, 0, 0.5); }
+header .add_btn {
+  margin: 50px auto;
+  height: 60px;
+  background-color: #ddb7ab;
+  color: white;
+  font-size: 17pt;
+  font-weight: 600;
+  border-radius: 0;
+  width: 100%; }
+  header .add_btn:hover {
+    background-color: #d1a699;
+    color: white; }
+header ul {
+  list-style: none; }
+  header ul li {
+    margin: 30px auto; }
+    header ul li span {
+      margin-left: 25px;
+      font-size: 13pt; }
+    header ul li img {
+      width: 40px;
+      height: 40px; }
 
 /*# sourceMappingURL=hero_css.css.map */

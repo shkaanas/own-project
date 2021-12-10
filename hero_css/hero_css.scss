@@ -50,32 +50,103 @@ header {
   .front_page {
     min-height: 100vh;
     padding: 20px;
-    background-color: aquamarine;
   }
-  ul {
-    list-style: none;
-    img {
-      width: 40px;
-      height: 40px;
-    }
-  }
+
   .photo {
     margin: 10px;
-    width: 400px;
-    height: 400px;
+    width: 350px;
+    height: 350px;
     @include bg;
   }
-  .description {
-    hr {
-      background-color: $bg_color;
-    }
+
+  hr {
+    height: 5px;
+    background-color: $bg_color;
+  }
+
+  .txt {
     text-align: center;
     justify-content: center;
     align-content: center;
-    .txt {
+    margin: 0 auto;
+    cursor: default;
+
+    h2 {
+      font-size: 24pt;
+      margin: 50px 0;
+      margin-bottom: 15px;
+      color: $base_background_color;
+    }
+    .stars {
       margin: 0 auto;
-      h2 {
-        color: azure;
+      margin-bottom: 45px;
+      justify-content: center;
+
+      .star {
+        margin: 0 10px;
+        width: 16px;
+        height: 16px;
+        background-image: url('../icons/star.png');
+      }
+    }
+    h3 {
+      margin-left: 25px;
+      margin-top: 50px;
+      font-size: 13pt;
+      text-align: start;
+    }
+    .alt {
+      text-align: center;
+    }
+    p {
+      margin-left: 25px;
+      margin-bottom: 50px;
+      font-size: 10pt;
+      text-align: start;
+    }
+    .sizes {
+      margin: 30px auto;
+      margin-left: 10px;
+      a {
+        font-size: 15pt;
+        text-decoration: none;
+        padding: 5px 15px;
+        margin: 5px;
+        color: $base_background_color;
+        &:hover {
+          border: 1px solid $base_background_color;
+        }
+      }
+    }
+  }
+
+  .add_btn {
+    margin: 50px auto;
+    height: 60px;
+    background-color: $bg_color;
+    color: $default_background_color;
+    font-size: 17pt;
+    font-weight: 600;
+    border-radius: 0;
+    width: 100%;
+    &:hover {
+      background-color: #d1a699;
+      color: $default_background_color;
+    }
+  }
+
+  ul {
+    list-style: none;
+    li {
+      margin: 30px auto;
+
+      span {
+        margin-left: 25px;
+        font-size: 13pt;
+      }
+      img {
+        width: 40px;
+        height: 40px;
       }
     }
   }
