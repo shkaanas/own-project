@@ -220,4 +220,39 @@ footer {
     .footer .elements .btn:hover {
       background-color: #d1a699; }
 
+.cart {
+  background-color: rgba(255, 255, 255, 0.699); }
+  .cart .title {
+    height: 80px;
+    background-color: #ffffff50; }
+  .cart h5 {
+    margin: 0 auto;
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 18pt; }
+  .cart .prod {
+    background-color: #ffffff50; }
+  .cart .photo .card {
+    border-radius: 0;
+    background-color: transparent;
+    text-decoration: none;
+    border: none; }
+    .cart .photo .card .pic {
+      width: 80px;
+      height: 80px;
+      overflow: hidden;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover; }
+    .cart .photo .card h5,
+    .cart .photo .card .price {
+      color: rgba(0, 0, 0, 0.5);
+      font-size: 15pt;
+      margin-left: 15px; }
+  .cart .number .groups {
+    width: 100%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5); }
+  .cart .number .btn {
+    width: 30px;
+    font-size: 10pt; }
+
 /*# sourceMappingURL=hero_css.css.map */
