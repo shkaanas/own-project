@@ -12,7 +12,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="css/main.css" />
-    <title>Anastasia Shkyrta</title>
+    <title>Mirella</title>
   </head>
   <body>
     <header>
@@ -55,20 +55,23 @@
             </ul>
             <ul class="navbar-nav mb-lg-0 ms-auto me-5">
               <li class="nav-item">
-                <a class="nav-link" href="#"
+                <a class="nav-link "  href="#"
                   ><img
                     src="./icons/search.svg"
                     style="width: 20px; height: 20px"
                     alt="logo"
                 /></a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#"
-                  ><img
+              <li class="nav-item btn shadow-none " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                <a class="nav-link position-relative" href="#" >
+                  <img
                     src="./icons/shop.svg"
                     style="width: 24px; height: 24px"
-                    alt="logo"
-                /></a>
+                    alt="shop"/>
+                <span class="position-absolute top-5 start-100  badge rounded-pill " style="background-color: rgba(255, 228, 196, 0.575); ">
+                  2
+                </span>
+              </a>
               </li>
             </ul>
           </div>
@@ -679,6 +682,76 @@
         </div>
       </div>
     </footer>
+
+    <!-- Ofcanvas cart -->  
+
+    <div class="offcanvas offcanvas-end cart" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel" >
+      <div class="offcanvas-header title" >
+        <h5 id="offcanvasRightLabel">SHOPPING BAG</h5>
+        <button type="button" class="btn-close text-reset shadow-none" data-bs-dismiss="offcanvas" aria-label="Close" ></button>
+      </div>
+      <div class="offcanvas-body" >
+
+      <div class="prod d-flex row">
+        <div class="photo col-8 pb-3">
+
+          <a class="card d-flex flex-row col-3" href="./hero_product.html">
+            <div
+              class="pic mt-2"
+              style="background-image: url(./img/CharlotteRing.jpg)"
+              ></div>
+              <div>
+                <h5 class="card-title mb-0 mt-3">Charlotte Ring</h5>
+              <p class="price ">$320</p>
+              </div>
+          </a>
+        </div>
+
+        <div class="number col-4 d-flex flex-column " >
+
+          <button type="button" class="btn-close shadow-none ms-auto mt-3" aria-label="Close" data-bs-dismiss="offcanvas" style="width: 5px; height: 5px; "></button>
+
+          <div class="btn-group groups mt-4" role="group" aria-label="Basic outlined example" >
+            <button type="button" class="btn shadow-none">-</button>
+            <button type="button" class="btn shadow-none">2</button>
+            <button type="button" class="btn shadow-none">+</button>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="prod d-flex mt-3 row">
+        <div class="photo col-8 pb-3 ">
+
+          <a class="card d-flex flex-row col-3" href="./hero_product.html">
+            <div
+              class="pic mt-2"
+              style="background-image: url(./img/CharlotteRing.jpg)"
+              ></div>
+              <div>
+                <h5 class="card-title mb-0 mt-3">Charlotte Ring</h5>
+              <p class="price ">$320</p>
+              </div>
+          </a>
+        </div>
+
+        <div class="number col-4 d-flex flex-column " >
+
+          <button type="button" class="btn-close shadow-none ms-auto mt-3" aria-label="Close" data-bs-dismiss="offcanvas" style="width: 5px; height: 5px;"></button>
+
+          <div class="btn-group groups mt-4" role="group" aria-label="Basic outlined example">
+            <button type="button" class="btn shadow-none">-</button>
+            <button type="button" class="btn shadow-none">1</button>
+            <button type="button" class="btn shadow-none">+</button>
+          </div>
+
+        </div>
+
+      </div>
+
+      </div>
+    </div>
 
     <!-- JS bootstrap -->
     <script

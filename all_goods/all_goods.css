@@ -1,0 +1,175 @@
+@import url("https://fonts.googleapis.com/css2?family=Marck+Script&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap");
+html {
+  scroll-behavior: smooth; }
+
+::-webkit-scrollbar {
+  width: 7px;
+  background-color: white; }
+
+::-webkit-scrollbar-thumb {
+  border-radius: 7px;
+  background-color: #f3e3d3; }
+
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color: #f9f9fd; }
+
+body {
+  font-family: 'Playfair Display', serif; }
+
+nav {
+  border-bottom: 1px solid white;
+  z-index: 2;
+  background-color: #ddb7ab93;
+  font-weight: 700; }
+  nav .navbar-brand {
+    z-index: 2; }
+  nav .nav-item {
+    padding: 15px; }
+    nav .nav-item .nav-link {
+      color: white !important;
+      font-size: 12pt; }
+      nav .nav-item .nav-link:hover {
+        color: white; }
+
+.main_block .topic {
+  align-items: center;
+  width: 100%;
+  display: flex; }
+  .main_block .topic h3 {
+    font-size: 23pt;
+    margin-right: 5px; }
+  .main_block .topic span {
+    width: 100%;
+    height: 1px;
+    background-color: #ddb7ab; }
+.main_block .rings .card {
+  margin: 25px 30px;
+  width: 250px;
+  border-radius: 0;
+  background-color: transparent;
+  text-decoration: none;
+  border: none;
+  border-bottom: 1px solid #ddb7ab; }
+  .main_block .rings .card .pic {
+    width: 250px;
+    height: 300px;
+    overflow: hidden;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; }
+  .main_block .rings .card .card-body h5 {
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 13pt;
+    padding-top: 20px; }
+  .main_block .rings .card .card-body .price {
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 15pt; }
+
+footer {
+  overflow: hidden; }
+  footer .ellips {
+    position: absolute;
+    top: 300px;
+    left: 330px;
+    width: 387px;
+    height: 153px;
+    border: 2px solid white;
+    border-radius: 70%;
+    transform: rotate(-50deg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; }
+
+.footer {
+  min-height: 400px; }
+  .footer .company_name {
+    position: relative;
+    text-align: center;
+    display: flex;
+    justify-content: center; }
+    .footer .company_name h3 {
+      width: 100%;
+      color: white;
+      font-family: 'Marck Script', cursive;
+      font-size: 30pt;
+      padding-bottom: 15px;
+      border-bottom: 2px solid white; }
+  .footer .text {
+    color: white;
+    text-align: center;
+    cursor: default; }
+    .footer .text h4 {
+      font-size: 17pt;
+      padding-bottom: 8px; }
+    .footer .text span {
+      margin: 5px 0;
+      font-size: 13pt; }
+  .footer .elements h3 {
+    width: 300px;
+    text-align: start;
+    color: white;
+    font-size: 20pt; }
+  .footer .elements ::placeholder {
+    color: white;
+    font-size: 15pt; }
+  .footer .elements input {
+    margin: 45px 0;
+    padding: 0 20px;
+    width: 300px;
+    height: 40px;
+    color: white;
+    font-size: 15pt;
+    border: none;
+    background-color: transparent;
+    border-bottom: 2px solid white;
+    outline: none; }
+    .footer .elements input:focus {
+      outline: none; }
+  .footer .elements .btn {
+    width: 300px;
+    font-size: 15pt;
+    border-radius: 0;
+    border: 2px solid white;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.281);
+    font-weight: 700; }
+    .footer .elements .btn:hover {
+      background-color: #d1a699; }
+
+.cart {
+  background-color: rgba(255, 255, 255, 0.699); }
+  .cart .title {
+    height: 80px;
+    background-color: #ffffff50; }
+  .cart h5 {
+    margin: 0 auto;
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 18pt; }
+  .cart .prod {
+    background-color: #ffffff50; }
+  .cart .photo .card {
+    border-radius: 0;
+    background-color: transparent;
+    text-decoration: none;
+    border: none; }
+    .cart .photo .card .picture {
+      width: 80px;
+      height: 80px;
+      overflow: hidden;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover; }
+    .cart .photo .card h5,
+    .cart .photo .card .price {
+      color: rgba(0, 0, 0, 0.5);
+      font-size: 15pt;
+      margin-left: 15px; }
+  .cart .number .groups {
+    width: 100%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5); }
+  .cart .number .btn {
+    width: 30px;
+    font-size: 10pt; }
+
+/*# sourceMappingURL=all_goods.css.map */
