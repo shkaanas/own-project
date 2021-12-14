@@ -50,26 +50,38 @@
             </li>
           </ul>
           <ul class="navbar-nav mb-lg-0 ms-auto me-5">
+
             <li class="nav-item">
-              <a class="nav-link" href="#"
-                ><img
+              <a class="nav-link mt-1 " href="#"><img
                   src="./icons/search.svg"
-                  style="width: 20px; height: 20px"
-                  alt="search"
-              /></a>
-              
+                  style="width: 23px; height: 23px"
+                  alt="logo" /></a>
             </li>
-            <li class="nav-item btn shadow-none " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
-              <a class="nav-link position-relative" href="#" >
-                <img
-                  src="./icons/shop.svg"
+
+            <li class="nav-item">
+              <a class="nav-link btn shadow-none mb-1  " href="#"  data-bs-toggle="modal" data-bs-target="#SignIn  "><img
+                  src="./icons/customer.png"
+                  style="width: 35px; height: 35px"
+                  alt="account" /></a>
+            </li>
+
+            <li class="nav-item btn shadow-none "
+              type="button" data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasRight"
+              aria-controls="offcanvasRight">
+              <a class="nav-link position-relative mt-1"
+                href="#">
+                <img src="./icons/shop.svg"
                   style="width: 24px; height: 24px"
-                  alt="shop"/>
-              <span class="position-absolute top-5 start-100  badge rounded-pill " style="background-color: rgba(255, 228, 196, 0.575); ">
-                2
-              </span>
-            </a>
+                  alt="shop" />
+                <span
+                  class="position-absolute top-5 start-100  badge rounded-pill "
+                  style="background-color: rgba(255, 228, 196, 0.575); ">
+                  2
+                </span>
+              </a>
             </li>
+
           </ul>
         </div>
       </div>
@@ -448,16 +460,15 @@
       <div class="prod d-flex row">
         <div class="photo col-8 pb-3">
 
-          <a class="card d-flex flex-row col-3" href="./hero_product.html">
-            <div
-              class="pic mt-2"
-              style="background-image: url(./img/CharlotteRing.jpg)"
-              ></div>
-              <div>
-                <h5 class="card-title mb-0 mt-3">Charlotte Ring</h5>
-              <p class="price ">$320</p>
-              </div>
-          </a>
+          <a class="card " href="./hero_product.html">
+          <div class="picture mt-2" style="background-image: url(./img/CroissantRing.jpg)">
+          </div>
+          <div>
+            <h5 class="card-title mb-0 mt-3">Charlotte Ring</h5>
+            <p class="price ">$320</p>
+          </div>
+        </a>
+
         </div>
 
         <div class="number col-4 d-flex flex-column " >
@@ -477,16 +488,17 @@
       <div class="prod d-flex mt-3 row">
         <div class="photo col-8 pb-3 ">
 
-          <a class="card d-flex flex-row col-3" href="./hero_product.html">
-            <div
-              class="pic mt-2"
-              style="background-image: url(./img/CharlotteRing.jpg)"
-              ></div>
-              <div>
-                <h5 class="card-title mb-0 mt-3">Charlotte Ring</h5>
-              <p class="price ">$320</p>
-              </div>
-          </a>
+          <a class="card d-flex flex-row "
+          href="./hero_product.html">
+          <div class="picture mt-2" style="background-image: url(./img/CroissantRing.jpg)">
+          </div>
+          <div>
+            <h5 class="card-title mb-0 mt-3">Charlotte
+              Ring</h5>
+            <p class="price ">$320</p>
+          </div>
+        </a>
+
         </div>
 
         <div class="number col-4 d-flex flex-column " >
@@ -505,6 +517,44 @@
 
       </div>
     </div>
+
+     <!-- Modals -->
+  <div class="modal fade" id="SignIn" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal_sign_in modal-dialog-centered">
+      <div class="modal-content ">
+        <button type="button" class="btn-close shadow-none btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        <div class="modal-body p-0">
+          <div class="align-items-center">
+           
+            <div class=" text-center px-3 px-md-5 mt-5">
+              <h4>Hi there!</h4>
+              <p>Please enter your email to log in or sign up</p>
+              <form action="" method="post">
+
+                <div class="form-floating mb-3">
+                  <input type="text" class="form-control" id="text" placeholder="Name">
+                  <label for="text">Name</label>
+                </div>
+
+              
+
+                <div class="form-floating mb-3">
+                  <input type="email" class="form-control" id="Input" placeholder="name@example.com">
+                  <label for="Input">Email</label>
+                </div>
+
+
+
+                <div class="margin_form alt">
+                  <input type="submit" name="" value="CONTINUE" class="btn btmod w-100 mt-3">
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
     <!-- JS bootstrap -->
     <script

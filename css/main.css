@@ -179,8 +179,7 @@ header {
   min-height: 100vh;
   background-color: #f3e3d3; }
   .about_block .main_content {
-    border-bottom: 2px solid white;
-    background-color: green; }
+    border-bottom: 2px solid white; }
   .about_block .text_block {
     max-width: 800px;
     padding: 50px; }
@@ -355,5 +354,70 @@ footer {
   .cart .number .btn {
     width: 30px;
     font-size: 10pt; }
+
+.modal {
+  background-color: rgba(0, 0, 0, 0.322); }
+  .modal_sign_in {
+    width: 100%;
+    max-width: 700px;
+    justify-content: center; }
+    .modal_sign_in .modal-content {
+      background-color: #ddb7abb7;
+      position: relative;
+      border-radius: 0;
+      border: none;
+      width: 500px;
+      height: 400px;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25); }
+      .modal_sign_in .modal-content .btn-close {
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        z-index: 2; }
+    .modal_sign_in h4 {
+      font-weight: bold;
+      font-size: 25pt;
+      line-height: 44px;
+      color: white; }
+    .modal_sign_in p {
+      color: white;
+      font-size: 13pt;
+      font-weight: 400; }
+  .modal .margin_form {
+    display: flex;
+    justify-content: end;
+    margin-bottom: 20px; }
+    .modal .margin_form.alt {
+      margin-top: 35px; }
+  .modal input {
+    max-height: 45px;
+    color: white; }
+  .modal label {
+    padding-top: 10px;
+    color: white; }
+  .modal form {
+    margin-top: 30px;
+    margin-bottom: 40px; }
+  .modal .form-control {
+    background-color: transparent;
+    border-radius: 0;
+    border: none;
+    border-bottom: 1px solid white;
+    margin-bottom: 20px; }
+    .modal .form-control:focus {
+      outline: none;
+      box-shadow: none;
+      color: white; }
+  .modal .btmod {
+    background-color: rgba(255, 255, 255, 0.541);
+    color: white;
+    border: 2px solid white;
+    height: 55px;
+    border-radius: 0;
+    padding: 5px 40px;
+    box-shadow: none; }
+    .modal .btmod:hover {
+      background: white;
+      color: #ddb7ab; }
 
 /*# sourceMappingURL=main.css.map */
