@@ -32,6 +32,41 @@ nav {
       nav .nav-item .nav-link:hover {
         color: white; }
 
+.fill li a {
+  position: relative;
+  transition: all 2s;
+  border-radius: 5px; }
+  .fill li a::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0%;
+    content: '.';
+    color: transparent;
+    background: white;
+    height: 1.5px;
+    border-radius: 5px; }
+  .fill li a:hover {
+    border-radius: 5px;
+    z-index: 1; }
+  .fill li a:hover::after {
+    z-index: -10;
+    animation: fill 0.8s forwards;
+    opacity: 1;
+    border-radius: 5px; }
+
+@keyframes fill {
+  0% {
+    width: 0%;
+    height: 1.5px; }
+  50% {
+    width: 100%;
+    height: 1.5px; }
+  100% {
+    width: 100%;
+    height: 1.5px; } }
 header {
   height: 100vh;
   overflow: hidden; }
@@ -52,7 +87,7 @@ header {
       filter: grayscale(90%); }
     header .slide h3 {
       position: absolute;
-      font-size: 55pt;
+      font-size: calc(50px + 50 * ((100vw - 320px) / 1920));
       font-weight: 400;
       bottom: 350px;
       left: 100px;
@@ -63,7 +98,7 @@ header {
       width: 600px;
       position: absolute;
       text-align: end;
-      font-size: 40pt;
+      font-size: calc(30px + 40 * ((100vw - 320px) / 1920));
       font-weight: 500;
       bottom: 350px;
       right: 50px;
@@ -71,7 +106,7 @@ header {
     header .slide p {
       width: 500px;
       position: absolute;
-      font-size: 20pt;
+      font-size: calc(20px + 10 * ((100vw - 320px) / 1920));
       font-weight: 600;
       bottom: 100px;
       right: 50px;
@@ -104,7 +139,7 @@ header {
     background-size: cover; }
   .popular_goods .best_seller {
     color: white;
-    font-size: 40pt; }
+    font-size: calc(40px + 30 * ((100vw - 320px) / 1920)); }
   .popular_goods .alt {
     text-decoration: none;
     font-size: 27pt;
@@ -127,38 +162,22 @@ header {
   border: none;
   border-bottom: 2px solid white; }
   .card .pic {
-    width: 287px;
-    height: 377px;
+    width: 277px;
+    height: 367px;
     overflow: hidden;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover; }
   .card .card-body h5 {
     color: white;
-    font-size: 15pt;
+    font-size: 14pt;
     padding-top: 20px; }
   .card .card-body .price {
     color: white;
     font-size: 15pt; }
 
-.costume_btn {
-  width: 400px;
-  height: 60px;
-  border-radius: 0;
-  border: 2px solid white;
-  color: white;
-  background-color: rgba(255, 255, 255, 0.281);
-  font-weight: 700;
-  font-size: 20pt;
-  transition: all 0.5s; }
-  .costume_btn:hover {
-    color: white;
-    border: none;
-    background-color: #ddb7ab;
-    transition: all 0.5s; }
-
 .bg_content {
-  min-height: 400px;
+  min-height: 50vh;
   background-image: url("../img/bg.jpg");
   background-attachment: fixed;
   background-position: center;
@@ -167,13 +186,29 @@ header {
   .bg_content .elements h3 {
     text-align: start;
     color: white;
-    font-size: 45px; }
+    font-size: calc(30px + 15 * ((100vw - 320px) / 1920)); }
   .bg_content .elements p {
     margin: 40px 0 40px 300px;
     text-align: start;
     width: 700px;
     color: white;
-    font-size: 25px; }
+    font-size: calc(20px + 10 * ((100vw - 320px) / 1920)); }
+
+.costume_btn {
+  width: calc(390px + 100 * ((100vw - 320px) / 1920));
+  height: calc(50px + 20 * ((100vw - 320px) / 1920));
+  border-radius: 0;
+  border: 2px solid white;
+  color: white;
+  background-color: rgba(255, 255, 255, 0.281);
+  font-weight: 700;
+  font-size: calc(25px + 10 * ((100vw - 320px) / 1920));
+  transition: all 0.5s; }
+  .costume_btn:hover {
+    color: white;
+    border: none;
+    background-color: #ddb7ab;
+    transition: all 0.5s; }
 
 .about_block {
   min-height: 100vh;
@@ -187,15 +222,16 @@ header {
       border-bottom: 2px solid white;
       padding-bottom: 15px;
       color: white;
-      font-size: 33pt; }
+      font-size: calc(40px + 10 * ((100vw - 320px) / 1920)); }
     .about_block .text_block p {
       color: white;
       font-weight: 500;
       margin-top: 20px;
-      font-size: 14pt; }
+      font-size: calc(15px + 5 * ((100vw - 320px) / 1920)); }
   .about_block .picture {
-    width: 571px;
-    height: 571px;
+    margin-top: 100px;
+    width: calc(491px + 85 * ((100vw - 320px) / 1920));
+    height: calc(491px + 85 * ((100vw - 320px) / 1920));
     border-start-start-radius: 40%;
     background-position: center;
     background-repeat: no-repeat;
@@ -209,10 +245,11 @@ header {
     height: 300px;
     color: white; }
     .men_collection .text_part h3 {
-      font-size: 47pt;
+      font-size: calc(67px + 10 * ((100vw - 320px) / 1920));
       cursor: default; }
     .men_collection .text_part a {
-      font-size: 18pt;
+      font-size: 35px;
+      font-weight: 400;
       color: white;
       margin: 0;
       padding: 0;
@@ -419,5 +456,16 @@ footer {
     .modal .btmod:hover {
       background: white;
       color: #ddb7ab; }
+
+@media (max-width: 1199.98px) {
+  .about_block {
+    justify-content: center;
+    align-content: center; }
+    .about_block .pic_block {
+      display: flex;
+      justify-content: center;
+      padding-bottom: 10px; }
+      .about_block .pic_block .picture {
+        margin: 10px auto; } }
 
 /*# sourceMappingURL=main.css.map */
