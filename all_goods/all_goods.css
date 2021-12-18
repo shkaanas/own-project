@@ -275,4 +275,17 @@ footer {
       background: white;
       color: #ddb7ab; }
 
+@media (max-width: 991.98px) {
+  .footer .asking {
+    display: none;
+    width: 0;
+    height: 0;
+    opacity: 0; } }
+@media (max-width: 1199.98px) {
+  .ellips {
+    width: 0;
+    height: 0;
+    opacity: 0;
+    display: none; } }
+
 /*# sourceMappingURL=all_goods.css.map */

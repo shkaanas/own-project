@@ -238,12 +238,14 @@ header {
   @include bg;
 
   .elements {
+    width: 100%;
     h3 {
       text-align: start;
       color: $default_background_color;
       font-size: calc(30px + 15 * ((100vw - 320px) / 1920));
     }
     p {
+      // width: min(200px, 400px, 800px) !important;
       margin: 40px 0 40px 300px;
       text-align: start;
       width: 700px;
@@ -253,7 +255,7 @@ header {
   }
 }
 .costume_btn {
-  width: calc(390px + 100 * ((100vw - 320px) / 1920));
+  width: calc(450px + 40 * ((100vw - 320px) / 1920));
   height: calc(50px + 20 * ((100vw - 320px) / 1920));
   border-radius: 0;
   border: 2px solid $default_background_color;
@@ -311,34 +313,31 @@ header {
   min-height: 100vh;
   background-color: $additional_c;
 
-  .text_part {
-    max-width: 630px;
-    height: 300px;
+  color: $default_background_color;
+
+  h3 {
+    font-size: calc(67px + 10 * ((100vw - 320px) / 1920));
+    cursor: default;
+  }
+  a {
+    font-size: 35px;
+    font-weight: 400;
     color: $default_background_color;
+    margin: 0;
+    padding: 0;
+    transition: all 0.5s;
 
-    h3 {
-      font-size: calc(67px + 10 * ((100vw - 320px) / 1920));
-      cursor: default;
-    }
-    a {
-      font-size: 35px;
-      font-weight: 400;
+    &:hover {
+      border-bottom: 1.5px solid $default_background_color;
       color: $default_background_color;
-      margin: 0;
-      padding: 0;
+      margin-bottom: -0.5px;
       transition: all 0.5s;
-
-      &:hover {
-        border-bottom: 1.5px solid $default_background_color;
-        margin-bottom: -0.5px;
-        transition: all 0.5s;
-      }
     }
-    p {
-      margin: 20px 0;
-      font-size: 17pt;
-      cursor: default;
-    }
+  }
+  p {
+    margin: 20px 0;
+    font-size: 17pt;
+    cursor: default;
   }
 }
 
@@ -349,12 +348,12 @@ header {
   @include bg;
 
   .elements {
+    min-width: 100%;
     h3 {
       text-align: start;
       color: $default_background_color;
-      font-size: 44pt;
+      font-size: calc(46px + 10 * ((100vw - 320px) / 1920));
     }
-
     ::placeholder {
       color: #00000081;
       font-size: 18pt;
@@ -362,8 +361,8 @@ header {
     input {
       margin: 45px 0;
       padding: 0 20px;
-      width: 600px;
-      height: 50px;
+      width: calc(450px + 150 * ((100vw - 320px) / 1920));
+      height: calc(45px + 5 * ((100vw - 320px) / 1920));
       background-color: rgba(255, 255, 255, 0.37);
       color: #00000081;
       font-size: 18pt;
@@ -611,7 +610,39 @@ footer {
 }
 
 //breakpoints
+// `sm` applies to x-small devices (portrait phones, less than 576px)
+// @media (max-width: 575.98px) { ... }
+
+// `md` applies to small devices (landscape phones, less than 768px)
+// @media (max-width: 767.98px) { ... }
+
+// `lg` applies to medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) {
+  .footer {
+    .asking {
+      display: none;
+      width: 0;
+      height: 0;
+      opacity: 0;
+    }
+  }
+  .bg_content {
+    .elements {
+      p {
+        width: 250px !important;
+        margin: 20px 0;
+      }
+    }
+  }
+}
+
 @media (max-width: 1199.98px) {
+  .ellips {
+    width: 0;
+    height: 0;
+    opacity: 0;
+    display: none;
+  }
   .about_block {
     justify-content: center;
     align-content: center;

@@ -183,19 +183,21 @@ header {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover; }
-  .bg_content .elements h3 {
-    text-align: start;
-    color: white;
-    font-size: calc(30px + 15 * ((100vw - 320px) / 1920)); }
-  .bg_content .elements p {
-    margin: 40px 0 40px 300px;
-    text-align: start;
-    width: 700px;
-    color: white;
-    font-size: calc(20px + 10 * ((100vw - 320px) / 1920)); }
+  .bg_content .elements {
+    width: 100%; }
+    .bg_content .elements h3 {
+      text-align: start;
+      color: white;
+      font-size: calc(30px + 15 * ((100vw - 320px) / 1920)); }
+    .bg_content .elements p {
+      margin: 40px 0 40px 300px;
+      text-align: start;
+      width: 700px;
+      color: white;
+      font-size: calc(20px + 10 * ((100vw - 320px) / 1920)); }
 
 .costume_btn {
-  width: calc(390px + 100 * ((100vw - 320px) / 1920));
+  width: calc(450px + 40 * ((100vw - 320px) / 1920));
   height: calc(50px + 20 * ((100vw - 320px) / 1920));
   border-radius: 0;
   border: 2px solid white;
@@ -239,29 +241,27 @@ header {
 
 .men_collection {
   min-height: 100vh;
-  background-color: #f3e3d3; }
-  .men_collection .text_part {
-    max-width: 630px;
-    height: 300px;
-    color: white; }
-    .men_collection .text_part h3 {
-      font-size: calc(67px + 10 * ((100vw - 320px) / 1920));
-      cursor: default; }
-    .men_collection .text_part a {
-      font-size: 35px;
-      font-weight: 400;
+  background-color: #f3e3d3;
+  color: white; }
+  .men_collection h3 {
+    font-size: calc(67px + 10 * ((100vw - 320px) / 1920));
+    cursor: default; }
+  .men_collection a {
+    font-size: 35px;
+    font-weight: 400;
+    color: white;
+    margin: 0;
+    padding: 0;
+    transition: all 0.5s; }
+    .men_collection a:hover {
+      border-bottom: 1.5px solid white;
       color: white;
-      margin: 0;
-      padding: 0;
+      margin-bottom: -0.5px;
       transition: all 0.5s; }
-      .men_collection .text_part a:hover {
-        border-bottom: 1.5px solid white;
-        margin-bottom: -0.5px;
-        transition: all 0.5s; }
-    .men_collection .text_part p {
-      margin: 20px 0;
-      font-size: 17pt;
-      cursor: default; }
+  .men_collection p {
+    margin: 20px 0;
+    font-size: 17pt;
+    cursor: default; }
 
 .bg_content_2 {
   min-height: 400px;
@@ -269,24 +269,26 @@ header {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover; }
-  .bg_content_2 .elements h3 {
-    text-align: start;
-    color: white;
-    font-size: 44pt; }
-  .bg_content_2 .elements ::placeholder {
-    color: #00000081;
-    font-size: 18pt; }
-  .bg_content_2 .elements input {
-    margin: 45px 0;
-    padding: 0 20px;
-    width: 600px;
-    height: 50px;
-    background-color: rgba(255, 255, 255, 0.37);
-    color: #00000081;
-    font-size: 18pt;
-    border: 2px solid #f2f2f2; }
-    .bg_content_2 .elements input:focus {
-      outline: none; }
+  .bg_content_2 .elements {
+    min-width: 100%; }
+    .bg_content_2 .elements h3 {
+      text-align: start;
+      color: white;
+      font-size: calc(46px + 10 * ((100vw - 320px) / 1920)); }
+    .bg_content_2 .elements ::placeholder {
+      color: #00000081;
+      font-size: 18pt; }
+    .bg_content_2 .elements input {
+      margin: 45px 0;
+      padding: 0 20px;
+      width: calc(450px + 150 * ((100vw - 320px) / 1920));
+      height: calc(45px + 5 * ((100vw - 320px) / 1920));
+      background-color: rgba(255, 255, 255, 0.37);
+      color: #00000081;
+      font-size: 18pt;
+      border: 2px solid #f2f2f2; }
+      .bg_content_2 .elements input:focus {
+        outline: none; }
 
 footer {
   overflow: hidden; }
@@ -457,7 +459,23 @@ footer {
       background: white;
       color: #ddb7ab; }
 
+@media (max-width: 991.98px) {
+  .footer .asking {
+    display: none;
+    width: 0;
+    height: 0;
+    opacity: 0; }
+
+  .bg_content .elements p {
+    width: 250px !important;
+    margin: 20px 0; } }
 @media (max-width: 1199.98px) {
+  .ellips {
+    width: 0;
+    height: 0;
+    opacity: 0;
+    display: none; }
+
   .about_block {
     justify-content: center;
     align-content: center; }
