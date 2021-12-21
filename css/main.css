@@ -24,6 +24,9 @@ nav {
   font-weight: 800; }
   nav .navbar-brand {
     z-index: 2; }
+    nav .navbar-brand img {
+      width: calc(55px + 15 * ((100vw - 320px) / 1920));
+      height: calc(55px + 15 * ((100vw - 320px) / 1920)); }
   nav .nav-item {
     padding: 15px; }
     nav .nav-item .nav-link {
@@ -142,7 +145,7 @@ header {
     font-size: calc(40px + 30 * ((100vw - 320px) / 1920)); }
   .popular_goods .alt {
     text-decoration: none;
-    font-size: 27pt;
+    font-size: calc(30px + 5 * ((100vw - 320px) / 1920));
     color: white; }
   .popular_goods .carousel {
     min-height: 87vh;
@@ -459,6 +462,52 @@ footer {
       background: white;
       color: #ddb7ab; }
 
+@media (max-width: 575.98px) {
+  header .main_gallery .slide h3 {
+    height: 60px;
+    font-size: 30px;
+    top: 250px;
+    border: 1px solid white; }
+  header .main_gallery .slide h4 {
+    width: 80px;
+    top: 350px;
+    left: 30px;
+    font-size: 30px;
+    text-align: start; }
+  header .main_gallery .slide p {
+    display: none; }
+
+  .carousel-item .card {
+    margin-bottom: 20px; }
+
+  .popular_goods .carousel {
+    min-height: 100vh; }
+    .popular_goods .carousel .indicator {
+      display: none; }
+  .popular_goods h4 {
+    margin: 30px auto !important; }
+  .popular_goods .alt {
+    display: none; }
+
+  .bg_content .elements {
+    margin-bottom: 30px; }
+    .bg_content .elements h3 {
+      margin-top: 30px;
+      width: 310px; }
+  .bg_content button {
+    font-size: 20px;
+    width: 300px; }
+
+  .about_block .pic_block .picture {
+    width: 300px;
+    height: 300px; }
+
+  .men_collection {
+    display: none; }
+
+  .bg_content_2 .elements input,
+  .bg_content_2 .elements button {
+    width: 300px; } }
 @media (max-width: 991.98px) {
   .footer .asking {
     display: none;

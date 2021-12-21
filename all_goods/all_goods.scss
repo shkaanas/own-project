@@ -34,6 +34,11 @@ nav {
 
   .navbar-brand {
     z-index: 2;
+
+    img {
+      width: calc(55px + 15 * ((100vw - 320px) / 1920));
+      height: calc(55px + 15 * ((100vw - 320px) / 1920));
+    }
   }
 
   .nav-item {

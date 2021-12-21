@@ -34,6 +34,11 @@ nav {
 
   .navbar-brand {
     z-index: 2;
+
+    img {
+      width: calc(55px + 15 * ((100vw - 320px) / 1920));
+      height: calc(55px + 15 * ((100vw - 320px) / 1920));
+    }
   }
   .nav-item {
     padding: 15px;
@@ -182,7 +187,7 @@ header {
 
   .alt {
     text-decoration: none;
-    font-size: 27pt;
+    font-size: calc(30px + 5 * ((100vw - 320px) / 1920));
     color: $default_background_color;
   }
 
@@ -611,7 +616,94 @@ footer {
 
 //breakpoints
 // `sm` applies to x-small devices (portrait phones, less than 576px)
-// @media (max-width: 575.98px) { ... }
+@media (max-width: 575.98px) {
+  header {
+    .main_gallery {
+      .slide {
+        h3 {
+          height: 60px;
+          font-size: 30px;
+          top: 250px;
+          border: 1px solid $default_background_color;
+        }
+        h4 {
+          width: 80px;
+          top: 350px;
+          left: 30px;
+          font-size: 30px;
+          text-align: start;
+        }
+        p {
+          display: none;
+        }
+      }
+    }
+  }
+  .carousel-item {
+    .card {
+      margin-bottom: 20px;
+    }
+  }
+
+  .popular_goods {
+    .carousel {
+      min-height: 100vh;
+
+      .indicator {
+        display: none;
+      }
+    }
+    h4 {
+      margin: 30px auto !important;
+    }
+    .alt {
+      display: none;
+    }
+  }
+
+  .bg_content {
+    .elements {
+      margin-bottom: 30px;
+      h3 {
+        margin-top: 30px;
+        width: 310px;
+      }
+    }
+
+    button {
+      font-size: 20px;
+      width: 300px;
+    }
+  }
+
+  .about_block {
+    .pic_block {
+      .picture {
+        width: 300px;
+        height: 300px;
+      }
+    }
+  }
+
+  .men_collection {
+    // margin-bottom: 0;
+    // .cards_only {
+    //   .card {
+    //     margin-bottom: 30px;
+    //   }
+    // }
+    display: none;
+  }
+
+  .bg_content_2 {
+    .elements {
+      input,
+      button {
+        width: 300px;
+      }
+    }
+  }
+}
 
 // `md` applies to small devices (landscape phones, less than 768px)
 // @media (max-width: 767.98px) { ... }

@@ -17,14 +17,14 @@
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark" id="navbar">
       <div class="container-fluid">
-        <a class="navbar-brand ms-5 " href="./index.html"
+        <a class="navbar-brand  ms-md-5 ms-sm-2 " href="./index.html"
           ><img
             src="./icons/logo.svg"
-            style="width: 70px; height: 70px"
             alt="logo"
         /></a>
+        
         <button
-          class="navbar-toggler"
+          class="navbar-toggler navbar-light shadow-none"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarTogglerDemo02"
@@ -33,21 +33,22 @@
           aria-label="Toggle navigation"
           style="border: none;"
         >
-          <span class="navbar-toggler" ></span>
+        <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
           <ul class="navbar-nav fill d-flex text-align-end align-items-end mb-lg-0 ms-auto">
             <li class="nav-item">
-              <a class="nav-link" href="#">ALL COLLECTIONS</a>
+              <a class="nav-link" href="./all_goods.html">ALL COLLECTIONS</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">FOR HIM</a>
+              <a class="nav-link" href="./all_goods.html#for_him">FOR HIM</a>
+            </li>
+           
+            <li class="nav-item">
+              <a class="nav-link" href="./index.html#about_us">ABOUT US</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">FOR HER</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./index.html">ABOUT US</a>
+              <a class="nav-link" href="./index.html#gift">RECIVE A GIFT</a>
             </li>
           </ul>
           <ul class="navbar-nav fill d-flex text-align-end align-items-end mb-lg-0 ms-auto me-5">
@@ -91,7 +92,7 @@
     <header class="container-fluid">
       <div class="row front_page p-0">
         <!-- Col with photos -->
-        <div class="col-7 photos d-flex flex-wrap mt-5">
+        <div class="col-xl-7 col-12 order-2  order-xl-1  photos d-flex flex-wrap align-content-center justify-content-center mt-5">
           <div
             class="photo"
             style="background-image: url('./img/Hero_Front.jpg')"
@@ -116,7 +117,6 @@
             <video
               class="p-0 m-0"
               src="./img/Hero_video.mp4"
-              style="width: 350px; height: 350px"
               autoplay
               muted
               loop
@@ -124,7 +124,7 @@
           </div>
         </div>
         <!-- Col with description -->
-        <div class="col-5 d-flex flex-column mt-4 pe-3">
+        <div class="col-xl-5 col-12 order-1 order-xl-2 d-flex flex-column mt-4 pe-3">
           <div class="txt">
             <h2>Daily Stacker Ring - $95</h2>
             <div class="stars d-flex">
@@ -163,7 +163,7 @@
             <ul>
               <li>
                 <img src="./icons/Delivery.png" alt="icon" />
-                <span>Free Expedited Shipping over 200+</span>
+                <span>Free  Shipping over 200+</span>
               </li>
               <li>
                 <img src="./icons/Exchanges.png" alt="icon" />
@@ -361,7 +361,6 @@
     </main>
 
     <!-- Footer -->
-
     <footer class="container-fluid" style="background-color: #ddb7ab ; position: relative;">
       <div class="ellips"></div>
       <div class="container footer">

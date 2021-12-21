@@ -33,6 +33,11 @@ nav {
 
   .navbar-brand {
     z-index: 2;
+
+    img {
+      width: calc(55px + 15 * ((100vw - 320px) / 1920));
+      height: calc(55px + 15 * ((100vw - 320px) / 1920));
+    }
   }
   .nav-item {
     padding: 15px;
@@ -111,6 +116,10 @@ header {
     width: 350px;
     height: 350px;
     @include bg;
+    video {
+      width: 350px;
+      height: 350px;
+    }
   }
 
   hr {
@@ -123,6 +132,7 @@ header {
     justify-content: center;
     align-content: center;
     margin: 0 auto;
+    width: 90%;
     cursor: default;
 
     h2 {
@@ -177,6 +187,7 @@ header {
   .add_btn {
     margin: 50px auto;
     height: 60px;
+    width: 70%;
     background-color: $bg_color;
     color: $default_background_color;
     font-size: 17pt;
@@ -512,6 +523,29 @@ footer {
     width: 0;
     height: 0;
     opacity: 0;
+    display: none;
+  }
+}
+
+@media (max-width: 575.98px) {
+  header {
+    .propositions {
+      span {
+        font-size: 15px;
+      }
+    }
+    .photo {
+      video {
+        width: 290px;
+        height: 290px;
+      }
+    }
+
+    .add_btn {
+      margin: 30px 0;
+    }
+  }
+  .indicator {
     display: none;
   }
 }

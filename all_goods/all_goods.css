@@ -24,6 +24,9 @@ nav {
   font-weight: 700; }
   nav .navbar-brand {
     z-index: 2; }
+    nav .navbar-brand img {
+      width: calc(55px + 15 * ((100vw - 320px) / 1920));
+      height: calc(55px + 15 * ((100vw - 320px) / 1920)); }
   nav .nav-item {
     padding: 15px; }
     nav .nav-item .nav-link {
